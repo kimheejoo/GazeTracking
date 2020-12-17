@@ -5,9 +5,10 @@ Check the README.md for complete documentation.
 
 import cv2
 from gaze_tracking import GazeTracking
+import sys
 
 gaze = GazeTracking()
-webcam = cv2.VideoCapture(0)
+webcam = cv2.VideoCapture(sys.argv[1])
 
 while True:
     # We get a new frame from the webcam
